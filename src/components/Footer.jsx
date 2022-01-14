@@ -1,14 +1,14 @@
 import * as React from "react";
 import {Link} from 'react-router-dom';
 
-export const Footer = () => {
+const Footer = () => {
 	return (
 		<footer>
-			<div class="container">
-				<Link to="/" class="logo-font">
+			<div className="container">
+				<Link to="/" className="logo-font">
 					conduit
 				</Link>
-				<span class="attribution">
+				<span className="attribution">
 					An interactive learning project from{" "}
 					<Link to="https://thinkster.io">Thinkster</Link>. Code &amp; design
 					licensed under MIT.
@@ -17,3 +17,5 @@ export const Footer = () => {
 		</footer>
 	);
 };
+
+export default Footer;

@@ -1,37 +1,37 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 
-export const Header = () => {
+const Header = () => {
 	return (
-		<nav class="navbar navbar-light">
-			<div class="container">
-				<Link class="navbar-brand" to="index.html">
+		<nav className="navbar navbar-light">
+			<div className="container">
+				<Link className="navbar-brand" to="/">
 					conduit
 				</Link>
-				<ul class="nav navbar-nav pull-xs-right">
-					<li class="nav-item">
+				<ul className="nav navbar-nav pull-xs-right">
+					<li className="nav-item">
 						{/* <!-- Add "active" class when you're on that page" --> */}
-						<Link class="nav-link active" to="">
+						<Link className="nav-link active" to="/">
 							Home
 						</Link>
 					</li>
-					<li class="nav-item">
-						<Link class="nav-link" to="">
-							<i class="ion-compose"></i>&nbsp;New Article
+					<li className="nav-item">
+						<Link className="nav-link" to="">
+							<i className="ion-compose"></i>&nbsp;New Article
 						</Link>
 					</li>
-					<li class="nav-item">
-						<Link class="nav-link" to="">
-							<i class="ion-gear-a"></i>&nbsp;Settings
+					<li className="nav-item">
+						<Link className="nav-link" to="/setting">
+							<i className="ion-gear-a"></i>&nbsp;Settings
 						</Link>
 					</li>
-					<li class="nav-item">
-						<Link class="nav-link" to="">
+					<li className="nav-item">
+						<Link className="nav-link" to="/login">
 							Sign in
 						</Link>
 					</li>
-					<li class="nav-item">
-						<Link class="nav-link" to="">
+					<li className="nav-item">
+						<Link className="nav-link" to="">
 							Sign up
 						</Link>
 					</li>
@@ -40,3 +40,5 @@ export const Header = () => {
 		</nav>
 	);
 };
+
+export default Header;
