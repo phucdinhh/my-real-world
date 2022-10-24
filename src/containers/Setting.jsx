@@ -1,60 +1,60 @@
 import React from "react";
 
 function Setting() {
-	return (
-		<div class="settings-page">
-			<div class="container page">
-				<div class="row">
-					<div class="col-md-6 offset-md-3 col-xs-12">
-						<h1 class="text-xs-center">Your Settings</h1>
+  return (
+    <div className="settings-page">
+      <div className="container page">
+        <div className="row">
+          <div className="col-md-6 offset-md-3 col-xs-12">
+            <h1 className="text-xs-center">Your Settings</h1>
 
-						<form>
-							<div>
-								<div class="form-group">
-									<input
-										class="form-control"
-										type="text"
-										placeholder="URL of profile picture"
-									/>
-								</div>
-								<div class="form-group">
-									<input
-										class="form-control form-control-lg"
-										type="text"
-										placeholder="Your Name"
-									/>
-								</div>
-								<div class="form-group">
-									<textarea
-										class="form-control form-control-lg"
-										rows="8"
-										placeholder="Short bio about you"
-									></textarea>
-								</div>
-								<div class="form-group">
-									<input
-										class="form-control form-control-lg"
-										type="text"
-										placeholder="Email"
-									/>
-								</div>
-								<div class="form-group">
-									<input
-										class="form-control form-control-lg"
-										type="password"
-										placeholder="Password"
-									/>
-								</div>
-								<button class="btn btn-lg btn-primary pull-xs-right">
-									Update Settings
-								</button>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	);
+            <form>
+              <div>
+                <div className="form-group">
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="URL of profile picture"
+                  />
+                </div>
+                <div className="form-group">
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder="Your Name"
+                  />
+                </div>
+                <div className="form-group">
+                  <textarea
+                    class="form-control form-control-lg"
+                    rows="8"
+                    placeholder="Short bio about you"
+                  ></textarea>
+                </div>
+                <div className="form-group">
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder="Email"
+                  />
+                </div>
+                <div className="form-group">
+                  <input
+                    class="form-control form-control-lg"
+                    type="password"
+                    placeholder="Password"
+                  />
+                </div>
+                <button className="btn btn-lg btn-primary pull-xs-right">
+                  Update Settings
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Setting;
