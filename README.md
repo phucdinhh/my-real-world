@@ -22,3 +22,7 @@ For more information on how to this works with other frontends/backends, head ov
 
 phuc.dinhngoc.7@gmail.com
 123456
+
+# References
+
+[Handling user authentication with Redux Toolkit](https://blog.logrocket.com/handling-user-authentication-redux-toolkit/)

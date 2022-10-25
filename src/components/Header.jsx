@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { getUserDetails } from "../features/user/userAction";
+import { logout } from "../features/user/userSlice";
 
 export const Header = () => {
   const { userInfo, userToken } = useSelector((state) => state.user);
@@ -42,9 +43,9 @@ export const Header = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="">
+                <div className="nav-link" onClick={() => dispatch(logout())}>
                   Sign out
-                </Link>
+                </div>
               </li>
             </>
           ) : (
